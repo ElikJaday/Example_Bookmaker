@@ -1,2 +1,7 @@
+include ':bookmaker_provider_impl'
+include ':bookmaker_provider_api'
+include ':main_screen_api'
+include ':main_screen_impl'
+include ':core'
 include ':app'
 rootProject.name = "Example_Bookmaker"

@@ -1,25 +1,19 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'kotlin-kapt'
-
-
-ext {
-    dagger_version = '2.17'
-}
 
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "dev.elvir.example_bookmaker"
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -40,14 +34,4 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-    //Dagger 2
-    kapt "com.google.dagger:dagger-compiler:$dagger_version"
-    implementation "com.google.dagger:dagger:$dagger_version"
-
-    //external module's
-    implementation project(path: ':core')
-    implementation project(path: ':main_screen_api')
-    implementation project(path: ':bookmaker_provider_impl')
-    implementation project(path: ':main_screen_impl')
-    implementation project(path: ':bookmaker_provider_api')
 }
