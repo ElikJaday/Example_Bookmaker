@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/bg_white"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/bg_white">
 
     <TextView
         android:id="@+id/book_maker_rating_title"
@@ -49,10 +49,10 @@
         android:id="@+id/book_maker_forecast_feed"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/size_20"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/book_maker_forecast_feed_title"
-        tools:listitem="@layout/list_item_forecast_feed"
-        android:layout_marginBottom="@dimen/size_20"/>
+        tools:listitem="@layout/list_item_forecast_feed" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardBackgroundColor="@color/white"
     android:layout_marginLeft="@dimen/size_16"
-    android:layout_marginRight="@dimen/size_16"
     android:layout_marginTop="@dimen/size_16"
+    android:layout_marginRight="@dimen/size_16"
+    app:cardBackgroundColor="@color/white"
     app:cardCornerRadius="8dp">
 
     <LinearLayout
@@ -14,15 +14,15 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include layout="@layout/layout_text_with_date"/>
+        <include layout="@layout/layout_text_with_date" />
 
-        <include layout="@layout/layout_event_text_subtext_and_percent"/>
+        <include layout="@layout/layout_event_text_subtext_and_percent" />
 
-        <include layout="@layout/layout_image_and_collapsele_text"/>
+        <include layout="@layout/layout_image_and_collapsele_text" />
 
-        <include layout="@layout/layout_separator"/>
+        <include layout="@layout/layout_separator" />
 
-        <include layout="@layout/layout_repeat"/>
+        <include layout="@layout/layout_repeat" />
 
 
     </LinearLayout>

@@ -15,7 +15,7 @@
         android:layout_height="match_parent">
 
         <dev.elvir.main_screen_impl.widgets.ReadMoreTextView
-            android:id="@+id/readMoreTextView"
+            android:id="@+id/tv_read_more_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/size_16"
@@ -29,7 +29,7 @@
             app:trimLines="3" />
 
         <com.makeramen.roundedimageview.RoundedImageView
-            android:id="@+id/roundedImageView"
+            android:id="@+id/iv_rounded_user"
             android:layout_width="@dimen/size_32"
             android:layout_height="@dimen/size_32"
             android:layout_marginStart="@dimen/size_16"
@@ -39,32 +39,32 @@
             android:src="@drawable/fake_man"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/readMoreTextView"
+            app:layout_constraintTop_toBottomOf="@+id/tv_read_more_text"
             app:riv_corner_radius="@dimen/size_16" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tv_author"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/size_14"
             android:text="ElikJaday"
             android:textColor="@color/title_black_color"
             android:textSize="@dimen/size_14"
-            app:layout_constraintBottom_toBottomOf="@+id/roundedImageView"
-            app:layout_constraintStart_toEndOf="@+id/roundedImageView"
-            app:layout_constraintTop_toTopOf="@+id/roundedImageView" />
+            app:layout_constraintBottom_toBottomOf="@+id/iv_rounded_user"
+            app:layout_constraintStart_toEndOf="@+id/iv_rounded_user"
+            app:layout_constraintTop_toTopOf="@+id/iv_rounded_user" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:background="@drawable/rating_rectangle_bg"
-            app:layout_constraintBottom_toBottomOf="@+id/roundedImageView"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_rounded_user"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/roundedImageView">
+            app:layout_constraintTop_toTopOf="@+id/iv_rounded_user">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/tv_rio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/size_8"
@@ -75,7 +75,7 @@
                 android:textColor="@color/title_black_color"
                 android:textSize="@dimen/size_12"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/textView3"
+                app:layout_constraintEnd_toStartOf="@+id/tv_sum"
                 app:layout_constraintHorizontal_bias="0.166"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -83,7 +83,7 @@
 
             <TextView
 
-                android:id="@+id/textView3"
+                android:id="@+id/tv_sum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/size_10"
