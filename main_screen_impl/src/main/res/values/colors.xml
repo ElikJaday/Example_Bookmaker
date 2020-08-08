@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_white">#E5E5E5</color>
+    <color name="white">#ffffff</color>
+    <color name="white_transparent">#37070202</color>
+    <color name="blue">#1C69FF</color>
+    <color name="light_green">#F0F2F4</color>
+    <color name="green">#27AE60</color>
+    <color name="gray">#BCC3CF</color>
+
+    <color name="title_black_color">#222222</color>
+    <color name="background_for_betcitry">#1A3DEF</color>
+    <color name="background_for_parimatch">#000000</color>
+    <color name="background_for_stavka">@color/blue</color>
+    <color name="background_for_winline">#FF8631</color>
+
+    <color name="text_light_color">#999999</color>
+
+</resources>

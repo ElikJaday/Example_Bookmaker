@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="book_maker_rating_title">Рейтинг букмекеров</string>
+    <string name="book_maker_forecast_feed_title">Лента Прогнозов</string>
+    <string name="book_maker_bonus_text">Бонус %1$s ₽ </string>
+    <string name="main_screen_header">Прогнозы</string>
+    <string name="forecast_text_mock">Бонус 1 000 ₽ на первый депозит</string>
+    <string name="read_more">Еще</string>
+    <string name="read_less">Свернуть</string>
+</resources>

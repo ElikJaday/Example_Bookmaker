@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/forecast_feed_root_container"
+    android:layout_width="wrap_content"
+    android:layout_height="90dp"
+    android:layout_marginLeft="@dimen/size_4"
+    android:layout_marginRight="@dimen/size_4"
+    app:cardBackgroundColor="#FF5722"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/book_maker_img"
+            android:layout_width="@dimen/bookmaker_ratings_main_logo"
+            android:layout_height="@dimen/size_20"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/logo_winline"
+            android:maxHeight="@dimen/size_28"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginTop="@dimen/size_4" />
+
+        <TextView
+            android:id="@+id/book_maker_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_16"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/size_8"
+            android:background="@drawable/rating_rectangle_bg"
+            android:paddingStart="@dimen/size_8"
+            android:paddingEnd="@dimen/size_10"
+            android:text="5.0"
+            android:textSize="@dimen/size_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/book_maker_img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/book_maker_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_14"
+            android:layout_marginBottom="12dp"
+            android:text="Бонус от 1000 ₽"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size_14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

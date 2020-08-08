@@ -4,8 +4,9 @@ import dagger.Component
 import dagger.Module
 import dagger.Provides
 import dev.elvir.bookmaker_provider_api.BookmakerProviderApi
+import dev.elvir.bookmaker_provider_api.data.repository.BookmakerRatingRepository
+import dev.elvir.bookmaker_provider_api.data.repository.ForecastRepository
 import dev.elvir.main_screen_api.MainScreenApi
-import dev.elvir.main_screen_impl.presentation.MainMenuContract
 import dev.elvir.main_screen_impl.presentation.MainMenuPresenter
 import dev.elvir.main_screen_impl.presentation.MainMenuScreen
 import javax.inject.Scope
@@ -42,6 +43,10 @@ interface MainScreenComponent : MainScreenApi {
 class MainScreenModule {
     @Provides
     @MainScreenScope
-    fun providePresenter(title : String) = MainMenuPresenter(title)
+    fun providePresenter(
+        bookmakerRatingRepository: BookmakerRatingRepository,
+        forecastRepository: ForecastRepository
+    ) =
+        MainMenuPresenter(bookmakerRatingRepository, forecastRepository)
 }
 
