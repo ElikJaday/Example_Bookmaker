@@ -10,76 +10,99 @@
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true">
 
-        <com.google.android.material.appbar.CollapsingToolbarLayout
-            android:id="@+id/toolbar_layout"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorPrimary"
-            app:expandedTitleMarginBottom="56dp"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:toolbarId="@+id/toolbar">
+        <!--        <com.google.android.material.appbar.CollapsingToolbarLayout-->
+        <!--            android:id="@+id/toolbar_layout"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="150dp"-->
+        <!--            android:fitsSystemWindows="true"-->
+        <!--            app:contentScrim="?attr/colorPrimary"-->
+        <!--            app:expandedTitleMarginBottom="56dp"-->
+        <!--            app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+        <!--            app:toolbarId="@+id/toolbar">-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/size_16"
-                android:layout_marginTop="@dimen/size_16"
-                android:text="@string/main_screen_header"
-                android:textColor="@color/title_black_color"
-                android:textSize="@dimen/size_32"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="@dimen/size_16"-->
+        <!--                android:layout_marginTop="@dimen/size_16"-->
+        <!--                android:text="@string/main_screen_header"-->
+        <!--                android:textColor="@color/title_black_color"-->
+        <!--                android:textSize="@dimen/size_32"-->
+        <!--                android:textStyle="bold"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
 
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginBottom="48dp"
-                app:layout_collapseMode="pin" />
+        <!--            <androidx.appcompat.widget.Toolbar-->
+        <!--                android:id="@+id/toolbar"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="1dp"-->
+        <!--                android:layout_marginBottom="48dp"-->
+        <!--                app:layout_collapseMode="pin" />-->
 
-            <com.google.android.material.tabs.TabLayout
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_gravity="bottom"
-                app:tabIndicatorColor="@color/title_black_color"
-                app:tabIndicatorFullWidth="false"
-                app:tabSelectedTextColor="@color/title_black_color"
-                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget">
+        <!--            <com.google.android.material.tabs.TabLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="48dp"-->
+        <!--                android:layout_gravity="bottom"-->
+        <!--                app:tabIndicatorColor="@color/title_black_color"-->
+        <!--                app:tabIndicatorFullWidth="false"-->
+        <!--                app:tabSelectedTextColor="@color/title_black_color"-->
+        <!--                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget">-->
 
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/tabItem"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Все Прогнозы" />
+        <!--                <com.google.android.material.tabs.TabItem-->
+        <!--                    android:id="@+id/tabItem"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="Все Прогнозы" />-->
 
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/tabItem2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Моя Лента" />
+        <!--                <com.google.android.material.tabs.TabItem-->
+        <!--                    android:id="@+id/tabItem2"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="Моя Лента" />-->
 
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/tabItem3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:clickable="false"
-                    android:text="" />
-            </com.google.android.material.tabs.TabLayout>
+        <!--                <com.google.android.material.tabs.TabItem-->
+        <!--                    android:id="@+id/tabItem3"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:clickable="false"-->
+        <!--                    android:text="" />-->
+        <!--            </com.google.android.material.tabs.TabLayout>-->
 
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <!--        </com.google.android.material.appbar.CollapsingToolbarLayout>-->
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.core.widget.NestedScrollView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        android:layout_height="match_parent">
 
-        <include layout="@layout/main_menu_content" />
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    </androidx.core.widget.NestedScrollView>
+            <include layout="@layout/main_menu_content" />
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/bottom_menu"
+            app:itemBackground="@android:color/white"
+            app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
+            app:itemTextColor="@drawable/bottom_nav_icon_color_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
